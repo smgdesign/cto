@@ -1,0 +1,13 @@
+{
+  "name": "alpine-js-project",
+  "version": "1.0.0",
+  "description": "A simple Alpine.js project",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --bind 0.0.0.0",
+    "serve": "python3 -m http.server 8000 --bind 0.0.0.0"
+  },
+  "keywords": ["alpine.js", "frontend", "javascript"],
+  "author": "",
+  "license": "MIT"
+}
