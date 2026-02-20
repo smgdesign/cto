@@ -7,7 +7,12 @@
     "dev": "python3 -m http.server 8000 --bind 0.0.0.0",
     "serve": "python3 -m http.server 8000 --bind 0.0.0.0"
   },
-  "keywords": ["alpine.js", "frontend", "javascript"],
+  "keywords": [
+    "alpine.js",
+    "frontend",
+    "javascript"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
