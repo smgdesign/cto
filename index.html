@@ -4,22 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMG Digital</title>
+    <title>SMG Digital - Fractional CTO Services On Demand</title>
+    <meta name="description" content="SMG Digital provides on-demand Fractional CTO services. Senior tech expertise, roadmap development, and strategic planning for growing businesses.">
+    <meta property="og:title" content="SMG Digital - Fractional CTO Services On Demand">
+    <meta property="og:description" content="A Senior Tech Expert available on a temporary or project basis. Strategic planning, roadmap development, and hands-on technical leadership.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://unpkg.com/@alpinejs/intersect" defer></script>
+    <!-- Modovisa Analytics -->
+    <script>
+  !function(){
+    var s=document.createElement("script");
+    s.src="https://cdn.modovisa.com/modovisa.min.js";
+    s.async=1;
+    s.dataset.token="c7104fc2-ce18-44ae-ad27-6e27eac3be00";
+    document.head.appendChild(s);
+  }();
+</script>
+    <!-- Crisp Chat -->
+    <script type="text/javascript">
+        window.$crisp=[];window.CRISP_WEBSITE_ID="e8be8cb3-2ea1-4143-b538-393c59aa371b";
+        (function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
 </head>
 
 <body>
+    <!-- Sticky Navigation -->
+    <nav class="site-nav" x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 80 })" :class="{ 'nav-scrolled': scrolled }">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">SMG Digital</a>
+            <div class="nav-links">
+                <a href="#experts">Experts</a>
+                <a href="#reasons">Reasons</a>
+                <a href="#what-you-get">What You Get</a>
+                <a href="#common-issues">Issues</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="hero-container">
         <div class="content">
             <h1 class="hello-text">Hello</h1>
             <img src="img/max-phone.png" alt="Max on phone" class="hero-image">
-            <p class="subtitle">Rich W, how can I help?</p>
+            <p class="subtitle">How can I help?</p>
         </div>
     </div>
 
-    <div class="experts-section">
+    <div id="experts" class="experts-section">
         <div class="curved-bg">
             <svg class="curve-svg" viewBox="0 0 1400 500" preserveAspectRatio="none">
                 <path d="M0,0 C200,500 1200,500 1400,0 L1400,0 L0,0 Z" fill="#f45b69" />
@@ -34,7 +68,7 @@
             <p class="experts-description">A Senior Tech Expert available on a temporary or project basis.</p>
         </div>
     </div>
-    <div class="reasons-section">
+    <div id="reasons" class="reasons-section">
         <h3 class="signs-title">Signs that you need a Fractional CTO</h3>
         <div class="curved-bg">
             <svg class="curve-svg" viewBox="0 0 1400 500" preserveAspectRatio="none">
@@ -73,8 +107,8 @@
                     <span class="reason-number">3.</span>
                     <div class="reason-text">
                         <p class="reason-title">You need guidance to evaluate new technologies.</p>
-                        <p class="reason-description">FTCO's have broad technical expertise and the experience necessary
-                            to determined which is right for your business.</p>
+                        <p class="reason-description">FCTO's have broad technical expertise and the experience necessary
+                            to determine which is right for your business.</p>
                     </div>
                 </div>
 
@@ -83,7 +117,7 @@
                     <span class="reason-number">5.</span>
                     <div class="reason-text">
                         <p class="reason-title">You haven't hired a CTO yet.</p>
-                        <p class="reason-description">Perhaps its too soon in your journey or its just not cost
+                        <p class="reason-description">Perhaps it's too soon in your journey or it's just not cost
                             effective to hire a full time CTO right now. A FCTO can work on a flexible basis, offering
                             all the same high level knowledge and leadership as you need them. No big salary, no lengthy
                             notice periods.</p>
@@ -115,7 +149,7 @@
         </div>
     </div>
 
-    <div class="what-you-get-section">
+    <div id="what-you-get" class="what-you-get-section">
         <img src="img/max-whiteboard.png" alt="Max with whiteboard" class="what-you-get-image">
         <div class="what-you-get-content">
             <h2 class="what-you-get-title">What you get with a hands-on FCTO</h2>
@@ -124,11 +158,11 @@
                     <p class="benefit-item">Insights into new tech</p>
                     <p class="benefit-item">Personalised Guidance</p>
                     <p class="benefit-item">Senior level expertise</p>
-                    <p class="benefit-item">Networking Oppurtunities</p>
+                    <p class="benefit-item">Networking Opportunities</p>
                 </div>
                 <div class="benefits-column-right">
                     <p class="benefit-item">Roadmap Development</p>
-                    <p class="benefit-item">Stratigic planning on demand</p>
+                    <p class="benefit-item">Strategic planning on demand</p>
                     <p class="benefit-item">Flexibility and Scalability</p>
                     <p class="benefit-item">Reduced Costs</p>
                 </div>
@@ -140,11 +174,11 @@
     </div>
 
     <!-- Common Issues Carousel Section -->
-    <div class="common-issues-section" x-data="{ activeSlide: 0, slides: [
-        { title: 'Technical Debt:', description: 'Is a combintation of bad decision and or shorccuts that build up and result in hard to maintain and inefficiant code and slow release processes.' },
-        { title: 'Gaps in Testing:', description: 'You can\'t gurantee that all use cases for your users will behave as intended. Improving this will increase user satisfaction and increase lreliability.' },
-        { title: 'No Visibility:', description: 'Means you don\'t know there\'s a problem until it\'s too late. You end up fixing the sympotom and not the root of the problem.This costs too much developer time becasue they\'re focused in the wrong place and that\'s exopensive.' },
-        { title: 'Sparse Documentation:', description: 'Developers don\'t know where to even start when you have poor documentaion. Time is wasted, code is duplicated. You end up with an imcompatible system because youre remaking decisons that have already been made.' }
+    <div id="common-issues" class="common-issues-section" x-data="{ activeSlide: 0, slides: [
+        { title: 'Technical Debt:', description: 'Is a combination of bad decisions and or shortcuts that build up and result in hard to maintain and inefficient code and slow release processes.' },
+        { title: 'Gaps in Testing:', description: 'You can\'t guarantee that all use cases for your users will behave as intended. Improving this will increase user satisfaction and increase reliability.' },
+        { title: 'No Visibility:', description: 'Means you don\'t know there\'s a problem until it\'s too late. You end up fixing the symptom and not the root of the problem. This costs too much developer time because they\'re focused in the wrong place and that\'s expensive.' },
+        { title: 'Sparse Documentation:', description: 'Developers don\'t know where to even start when you have poor documentation. Time is wasted, code is duplicated. You end up with an incompatible system because you\'re remaking decisions that have already been made.' }
     ],
         direction: 'right',
         goToNext() {
@@ -183,12 +217,168 @@
             </button>
         </div>
     </div>
-    <div class="leverage-section"
-        style="background: #3d3a4b; display: flex; flex-direction: column; align-items: center; gap: 2rem; padding: 6rem 2rem;">
-        <p class="leverage-text">Need an instant code health check?</p>
-        <p class="slide-description" style="color: #a09be7;">Try our new automated repository audit tool.</p>
-        <a href="repo-audit.html" class="audit-button" style="text-decoration: none;">Launch Audit Tool</a>
+
+    <!-- Road to Recovery Section -->
+    <div class="recovery-section">
+        <div class="recovery-content">
+            <p class="recovery-subtitle">These are symptoms and there is a</p>
+            <h2 class="recovery-title">Road to Recovery</h2>
+            <img src="img/money-baby.png" alt="Baby" class="recovery-image">
+            <p class="recovery-lead">Here's what we aim to implement straight away:</p>
+        </div>
+        <svg class="recovery-curve-svg" viewBox="0 0 1400 200" preserveAspectRatio="none">
+            <path d="M0,0 L0,200 C350,0 1050,0 1400,200 L1400,0 Z" fill="#87ceeb" />
+        </svg>
     </div>
+
+    <!-- Recovery Steps Section -->
+    <div class="steps-section">
+        <div class="steps-content">
+            <div class="step-item step-left">
+                <span class="step-number">1.</span>
+                <span class="step-text">Strengthen Communication</span>
+            </div>
+            <div class="step-item step-right">
+                <span class="step-number">2.</span>
+                <span class="step-text">Establish Routine</span>
+            </div>
+            <div class="step-item step-left">
+                <span class="step-number">3.</span>
+                <span class="step-text">Align Roadmaps</span>
+            </div>
+            <div class="step-item step-right">
+                <span class="step-number">4.</span>
+                <span class="step-text">Triage and Streamline</span>
+            </div>
+            <div class="step-item step-left">
+                <span class="step-number">5.</span>
+                <span class="step-text">Strengthen Team Dynamics</span>
+            </div>
+            <div class="step-item step-right">
+                <span class="step-number">6.</span>
+                <span class="step-text">Regular Reporting, Accountability and Progress</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div id="faqs" class="faqs-section" x-data="{ open: null }">
+        <svg class="faqs-curve-svg" viewBox="0 0 1400 200" preserveAspectRatio="none">
+            <path d="M0,0 C350,200 1050,200 1400,0 L1400,0 L0,0 Z" fill="#4b88a2" />
+        </svg>
+        <h2 class="faqs-title">FAQ's</h2>
+        <div class="faqs-content">
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 1 ? null : 1" :class="{ 'faq-open': open === 1 }">
+                    <span>What is a FCTO?</span>
+                    <span class="faq-icon" x-text="open === 1 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 1" x-transition>
+                    <p>A Fractional CTO is a senior technology leader who works with your business on a part-time or project basis. They bring the same strategic expertise and leadership as a full-time CTO, but at a fraction of the cost and commitment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 2 ? null : 2" :class="{ 'faq-open': open === 2 }">
+                    <span>When is the right time to hire a FCTO?</span>
+                    <span class="faq-icon" x-text="open === 2 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 2" x-transition>
+                    <p>If you're experiencing rapid growth, struggling with technical debt, planning a major technology upgrade, or simply need senior technical guidance without the overhead of a full-time hire, it's likely the right time to bring in a FCTO.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 3 ? null : 3" :class="{ 'faq-open': open === 3 }">
+                    <span>What is the average cost?</span>
+                    <span class="faq-icon" x-text="open === 3 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 3" x-transition>
+                    <p>Costs vary depending on the scope and duration of engagement. A FCTO typically costs a fraction of a full-time CTO salary, with flexible arrangements available from a few hours per week to several days. Get in touch for a tailored quote.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 4 ? null : 4" :class="{ 'faq-open': open === 4 }">
+                    <span>How long will I need a FCTO?</span>
+                    <span class="faq-icon" x-text="open === 4 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 4" x-transition>
+                    <p>Engagements are entirely flexible. Some businesses need support for a specific project lasting a few weeks, while others benefit from ongoing strategic guidance over months or years. There are no lengthy notice periods or long-term commitments required.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 5 ? null : 5" :class="{ 'faq-open': open === 5 }">
+                    <span>How will a FCTO integrate with my existing team?</span>
+                    <span class="faq-icon" x-text="open === 5 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 5" x-transition>
+                    <p>A FCTO works alongside your existing team, providing mentorship, technical leadership, and strategic direction. They adapt to your workflows, tools, and culture to ensure a seamless fit without disrupting your current operations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" @click="open = open === 6 ? null : 6" :class="{ 'faq-open': open === 6 }">
+                    <span>What is the difference between a FCTO and a consultant?</span>
+                    <span class="faq-icon" x-text="open === 6 ? '-' : '+'"></span>
+                </button>
+                <div class="faq-answer" x-show="open === 6" x-transition>
+                    <p>A consultant typically delivers recommendations and reports. A FCTO rolls up their sleeves and works hands-on with your team. They take ownership of technical strategy, lead implementation, mentor developers, and are accountable for outcomes, not just advice.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faqs-bottom-strip"></div>
+    </div>
+
+    <!-- Ally CTA Section -->
+    <div class="ally-cta-section">
+        <svg class="ally-curve-svg" viewBox="0 0 1400 200" preserveAspectRatio="none">
+            <path d="M0,0 C350,200 1050,200 1400,0 L1400,0 L0,0 Z" fill="#fefcfa" />
+        </svg>
+        <p class="leverage-text">Need an instant code health check?</p>
+        <p class="ally-cta-subtitle">Try our new automated repository audit tool.</p>
+        <a href="https://ally.smgdesign.org" class="audit-button" target="_blank" rel="noopener noreferrer"><img src="img/ally-logo-white.svg" alt="Ally - Automated Repository Audit Tool" class="ally-logo"></a>
+    </div>
+
+    <!-- Contact CTA Section -->
+    <div id="contact" class="contact-section">
+        <p class="contact-subtitle">What's next?</p>
+        <h2 class="contact-title">Fancy a Chat?</h2>
+        <div class="contact-form-wrapper">
+            <form action="https://formspree.io/f/mvzvqnrn" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group form-group-message">
+                    <label for="message">Tell us a little about you:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">GO!</button>
+            </form>
+        </div>
+        <div class="contact-section-bottom"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-profile">
+                <img src="img/Rich-Profile.svg" alt="Rich W" class="footer-avatar">
+                <a href="https://www.linkedin.com/in/richardwilsonsmg/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            <div class="footer-company">
+                <p>SMG Design Ltd is a company registered in England & Wales.</p>
+                <p>Company number: 09288627</p>
+                <p>Registered address: 32a East Street, St Ives, Huntingdon, Cambridgeshire, PE27 5PD</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 SMG Design Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
